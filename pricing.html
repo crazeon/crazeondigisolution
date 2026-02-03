@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing - Crazeon Digi Solution | Meta Ads & Website</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+body{font-family:'Poppins',sans-serif;line-height:1.6}
+.navbar-brand img{width:35px;height:35px;border-radius:50%;margin-right:8px}
+.pricing-section{background:rgba(255,255,255,0.1);backdrop-filter:blur(15px);border-radius:25px;padding:3rem 2rem;margin:2rem auto;max-width:1400px}
+.plans-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem}
+.plan-card{border-radius:20px;padding:2.5rem 1.5rem;transition:all 0.4s ease;background:white;color:#333;position:relative;overflow:hidden;min-height:520px;display:flex;flex-direction:column;border:1px solid rgba(255,255,255,0.2)}
+.plan-card:hover{transform:translateY(-15px);box-shadow:0 30px 60px rgba(0,0,0,0.25)}
+.starter-card{border:4px solid #28a745}
+.growth-card{background:linear-gradient(135deg,#007bff,#0056b3);color:white !important}
+.pro-card{background:linear-gradient(135deg,#ffc107,#fd7e14);color:#333 !important}
+.business-card{background:linear-gradient(135deg,#6f42c1,#e83e8c);color:white !important}
+.premium-card{background:linear-gradient(135deg,#1a1a1a,#333);color:#ffd700 !important;border:4px solid #ffd700}
+.popular{position:absolute;top:-12px;right:25px;background:#dc3545;color:white;padding:10px 25px;border-radius:30px;font-size:13px;font-weight:700}
+.price{font-size:clamp(2.8rem,8vw,5.5rem);font-weight:800;margin:1.5rem 0 0.5rem 0;line-height:1.1}
+.price small{font-size:0.4em;font-weight:500;opacity:0.9;display:block;margin-top:0.25rem}
+.plan-card ul li{font-size:1.15rem;margin-bottom:0.8rem;font-weight:500;padding-left:0.5rem}
+.plan-card ul li i{font-size:1.25rem;width:28px}
+.plan-card .btn{margin-top:auto;padding:1.2rem 2rem;font-size:1.15rem;font-weight:700;border-radius:15px}
+.nav-tabs{border:none;gap:1.5rem;justify-content:center;margin-bottom:3rem}
+.nav-tabs .nav-link{border-radius:20px;padding:1.2rem 3rem;font-size:1.35rem;font-weight:600;border:3px solid transparent}
+.nav-tabs .nav-link.active{background:linear-gradient(135deg,#007bff,#0056b3);color:white !important;border-color:#007bff;transform:scale(1.05)}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;background:#25D366;width:55px;height:55px;border-radius:50%;color:white;font-size:22px;box-shadow:0 6px 20px rgba(37,211,102,0.4);z-index:1000;transition:all 0.3s;text-decoration:none;display:flex;align-items:center;justify-content:center}
+.whatsapp-float:hover{transform:scale(1.08)}
+@media(max-width:768px){.pricing-section{padding:2rem 1rem;margin:1rem;border-radius:20px}.plans-grid{grid-template-columns:1fr;gap:1.5rem}.plan-card{min-height:480px;padding:2rem 1.25rem}.price{font-size:2.8rem !important}.nav-tabs .nav-link{padding:1rem 2rem;font-size:1.2rem}}
+@media(max-width:576px){.price{font-size:2.4rem !important}.plan-card ul li{font-size:1.05rem}}
+.display-4,.display-6{font-weight:700;text-shadow:0 4px 15px rgba(0,0,0,0.3)}
+.text-white-50{color:rgba(255,255,255,0.85) !important}
+/* Navbar same as index */
+.navbar-dark .navbar-brand{color:#fff !important;font-weight:800;font-size:1.5rem}
+.navbar-dark .navbar-nav .nav-link{color:rgba(255,255,255,0.8) !important;font-weight:600}
+.navbar-dark .navbar-nav .nav-link:hover,.navbar-dark .navbar-nav .nav-link.active{color:#fff !important}
+</style>
+</head>
+<body>
+
+<!-- Navbar - EXACT SAME AS INDEX -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand fw-bold" href="index.html">
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTcuNSIgY3k9IjE3LjUiIHI9IjE3LjUiIGZpbGw9IiMwZDZlZmQiLz4KPHRleHQgeD0iMTcuNSIgeT0iMjIiIGZvbnQtZmFtaWx5PSJQb3BwaW5zIiBmb250LXNpemU9IjExIiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+QzwvdGV4dD4KPC9zdmc+Cg==" alt="Crazeon">
+Crazeon Digi
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link fw-medium" href="index.html">🏠 Home</a></li>
+<li class="nav-item"><a class="nav-link fw-medium" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link active fw-medium" href="pricing.html">💰 Pricing</a></li>
+<li class="nav-item"><a class="nav-link fw-medium" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link fw-medium" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Main Content - Padding for sticky navbar -->
+<div style="padding-top: 80px;">
+
+<!-- Pricing Hero Header -->
+<section class="bg-primary bg-gradient text-white py-5 mb-5" style="background: linear-gradient(135deg, #0d6efd 0%, #6610f2 100%) !important;">
+<div class="container text-center">
+<h1 class="display-4 fw-bold mb-3" data-aos="fade-up">Growth Plans for Your Business</h1>
+<p class="lead fs-4 opacity-90 mb-0" data-aos="fade-up" data-aos-delay="200">All India Targeting • WhatsApp Leads Direct • Starting ₹1,499</p>
+</div>
+</section>
+
+<!-- Tabs Section -->
+<div class="container">
+<ul class="nav nav-tabs justify-content-center mb-5" id="pricingTabs">
+<li class="nav-item">
+<a class="nav-link active px-4 py-3 fs-5 fw-bold" href="#ads" data-bs-toggle="tab" data-aos="zoom-in">📈 Meta Ads Plans</a>
+</li>
+<li class="nav-item">
+<a class="nav-link px-4 py-3 fs-5 fw-bold" href="#websites" data-bs-toggle="tab" data-aos="zoom-in" data-aos-delay="100">💻 Website Plans</a>
+</li>
+</ul>
+
+<div class="tab-content">
+<!-- ADS PLANS -->
+<div class="tab-pane fade show active" id="ads">
+<div class="pricing-section text-center">
+<h2 class="display-6 fw-bold text-black mb-5 pb-3" data-aos="fade-up">Meta Ads Growth Plans</h2>
+<div class="plans-grid">
+<div class="plan-card starter-card" data-aos="fade-up">
+<h3 class="h3 fw-bold mb-4">🚀 BASIC STARTER</h3>
+<div class="price">₹<span>1,499</span><small>/month</small></div>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-success me-2"></i>1 Ad Campaign</li>
+<li><i class="fas fa-check text-success me-2"></i>Basic UP Targeting</li>
+<li><i class="fas fa-check text-success me-2"></i>WhatsApp Leads</li>
+<li><i class="fas fa-check text-success me-2"></i>7 Days Setup Support</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Ads%20Basic%20₹1499" class="btn btn-success fw-bold w-100">START ADS</a>
+</div>
+
+<div class="plan-card growth-card" data-aos="fade-up" data-aos-delay="100">
+<span class="popular">🔥 POPULAR</span>
+<h3 class="h3 fw-bold mb-4">📊 GROWTH PLAN</h3>
+<div class="price">₹<span>2,999</span><small>/month</small></div>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-light me-2"></i>3 Ad Campaigns</li>
+<li><i class="fas fa-check text-light me-2"></i>UP + All India</li>
+<li><i class="fas fa-check text-light me-2"></i>Pixel Tracking</li>
+<li><i class="fas fa-check text-light me-2"></i>Personal Manager</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Ads%20Growth%20₹2999" class="btn btn-light fw-bold w-100">BEST VALUE</a>
+</div>
+
+<div class="plan-card pro-card" data-aos="fade-up" data-aos-delay="200">
+<h3 class="h3 fw-bold mb-4">⚡ ADVANCE GROWTH</h3>
+<div class="price">₹<span>4,999</span><small>/month</small></div>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check me-2"></i>5+ Campaigns</li>
+<li><i class="fas fa-check me-2"></i>Video + Carousel Ads</li>
+<li><i class="fas fa-check me-2"></i>Weekly Optimization</li>
+<li><i class="fas fa-check me-2"></i>Priority Support</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Ads%20Advance%20₹4999" class="btn btn-dark fw-bold w-100">ADVANCE ADS</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- WEBSITE PLANS -->
+<div class="tab-pane fade" id="websites">
+<div class="pricing-section text-center">
+<h2 class="display-6 fw-bold text-black mb-5 pb-3" data-aos="fade-up">Professional Website Plans</h2>
+<div class="plans-grid">
+<div class="plan-card starter-card" data-aos="fade-up">
+<h3 class="h4 fw-bold mb-4">🚀 STARTER</h3>
+<div class="price">₹<span>1,499</span></div>
+<small class="text-muted fw-medium">one-time</small>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-success me-2"></i>1 Page Website</li>
+<li><i class="fas fa-check text-success me-2"></i>Free Hosting</li>
+<li><i class="fas fa-check text-success me-2"></i>Mobile Responsive</li>
+<li><i class="fas fa-check text-success me-2"></i>WhatsApp Button</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Starter%20Website%20₹1499" class="btn btn-success fw-bold w-100">GET STARTED</a>
+</div>
+
+<div class="plan-card growth-card" data-aos="fade-up" data-aos-delay="100">
+<h3 class="h4 fw-bold mb-4">🏢 ONE PAGE BUSINESS</h3>
+<div class="price">₹<span>7,999</span></div>
+<small class="text-light fw-medium">one-time</small>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-light me-2"></i>1 Page + Contact</li>
+<li><i class="fas fa-check text-light me-2"></i>Free Domain 1yr</li>
+<li><i class="fas fa-check text-light me-2"></i>Free Hosting</li>
+<li><i class="fas fa-check text-light me-2"></i>SEO Ready</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20One%20Page%20₹7999" class="btn btn-light fw-bold w-100">BUSINESS SITE</a>
+</div>
+
+<div class="plan-card pro-card" data-aos="fade-up" data-aos-delay="200">
+<span class="popular">⭐ MOST POPULAR</span>
+<h3 class="h4 fw-bold mb-4">💼 BUSINESS WEBSITE</h3>
+<div class="price">₹<span>16,999</span></div>
+<small class="text-light fw-medium">one-time</small>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check me-2"></i>7 Professional Pages</li>
+<li><i class="fas fa-check me-2"></i>Free Domain 1yr</li>
+<li><i class="fas fa-check me-2"></i>Free Hosting</li>
+<li><i class="fas fa-check me-2"></i>Google My Business</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Business%20₹16999" class="btn btn-dark fw-bold w-100">PRO BUSINESS</a>
+</div>
+
+<div class="plan-card business-card" data-aos="fade-up" data-aos-delay="300">
+<h3 class="h4 fw-bold mb-4">🛒 E-COMMERCE</h3>
+<div class="price">₹<span>21,999</span></div>
+<small class="text-light fw-medium">one-time</small>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-light me-2"></i>15+ Pages + Products</li>
+<li><i class="fas fa-check text-light me-2"></i>Free Domain 1yr</li>
+<li><i class="fas fa-check text-light me-2"></i>Free Hosting</li>
+<li><i class="fas fa-check text-light me-2"></i>Razorpay/Paytm</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Ecommerce%20₹21999" class="btn btn-light fw-bold w-100">START E-COM</a>
+</div>
+
+<div class="plan-card premium-card" data-aos="fade-up" data-aos-delay="400">
+<h3 class="h4 fw-bold mb-4">👑 PREMIUM E-COMMERCE</h3>
+<div class="price">₹<span>34,999</span></div>
+<small class="text-light fw-medium">one-time</small>
+<ul class="list-unstyled mt-4 mb-4">
+<li><i class="fas fa-check text-warning me-2"></i>25+ Custom Pages</li>
+<li><i class="fas fa-check text-warning me-2"></i>3 Years Free Domain</li>
+<li><i class="fas fa-check text-warning me-2"></i>3 Years Free Hosting</li>
+<li><i class="fas fa-check text-warning me-2"></i>6 Months Free Maintenance</li>
+</ul>
+<a href="https://wa.me/918467004047?text=Hi!%20Premium%20₹34999" class="btn btn-warning fw-bold w-100 text-dark">PREMIUM DEAL 🔥</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/918467004047?text=Pricing%20dekhi...%20best%20plan%20batao" class="whatsapp-float" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({duration:800});</script>
+
+</body>
+</html>
